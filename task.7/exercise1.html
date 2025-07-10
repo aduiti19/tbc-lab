@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      float: left;
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .column1 {
+      background-color: lightblue;
+    }
+
+    .column2 {
+      background-color: yellow;
+    }
+
+    .column3 {
+      background-color: red;
+    }
+
+    .column4 {
+      background-color: green;
+      color: white;
+      clear: both;
+      width: 100%;
+      padding-top: 10px;
+    }
+
+    .header {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .numbered-list {
+      list-style-type: decimal;
+      padding-left: 20px;
+    }
+
+    .bulleted-list {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Row 1: Header -->
+  <div class="box column1">
+    <div class="header">Column 1</div>
+    <p><strong>A numbered list:</strong></p>
+    <ol class="numbered-list">
+      <li>Able</li>
+      <li>Baker</li>
+      <li>Charlie</li>
+      <li>Delta</li>
+      <li>Echo</li>
+    </ol>
+  </div>
+
+  <div class="box column2">
+    <div class="header">Column 2</div>
+    <p style="text-align: center;">B</p>
+  </div>
+
+  <div class="box column3">
+    <div class="header">Column 3</div>
+    <p style="text-align: center;">C</p>
+  </div>
+
+  <!-- Row 2: Green box -->
+  <div class="box column4">
+    <p><strong>An unnumbered list:</strong></p>
+    <ul class="bulleted-list">
+      <li>Pounds</li>
+      <li>Dollars</li>
+      <li>Euro</li>
+      <li>Yen</li>
+      <li>Roubles</li>
+    </ul>
+  </div>
+
+</body>
+</html>

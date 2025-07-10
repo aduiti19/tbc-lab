@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Image Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+    }
+    th {
+      background-color: #1e869d;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #e0e7ea;
+    }
+    tr:nth-child(odd) {
+      background-color: #f7f9fa;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Student Table with Images</h2>
+  <table>
+    <tr>
+      <th>S.N.</th>
+      <th>Name</th>
+      <th>Image</th>
+    </tr>
+
+    <script>
+      for (var i = 1; i <= 4; i++) {
+        document.write("<tr>");
+        document.write("<td>" + i + "</td>");
+        document.write("<td>Name " + i + "</td>");
+        document.write("<td><img src='" + i + ".jpg' alt='Image " + i + "' width='60'></td>");
+        document.write("</tr>");
+      }
+    </script>
+
+  </table>
+
+</body>
+</html>

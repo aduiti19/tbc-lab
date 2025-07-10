@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Layout Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Image1 - Border 5px */
+    #img1 {
+      border: 5px solid black;
+    }
+
+    /* Image2 - Resize + link to full-size image */
+    #img2 {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* Image3 - Align left or right */
+    #img3 {
+      float: right; /* or use float: left; */
+      margin: 10px;
+    }
+
+    /* Image4 - Margin 50px horizontally and vertically */
+    #img4 {
+      margin: 50px;
+    }
+
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Image Layout Example</h2>
+
+  <!-- Image 1: Border 5px -->
+  <p>
+    <img id="img1" src="image1.jpg" alt="Image 1">
+    <br>Text aligned with image1.
+  </p>
+
+  <!-- Image 2: Resize and link -->
+  <p>
+    <a href="image2.jpg" target="_blank">
+      <img id="img2" src="image2.jpg" alt="Image 2">
+    </a>
+    <br>Click the image above to view the original full-size image.
+  </p>
+
+  <!-- Image 3: Align right -->
+  <div class="clearfix">
+    <img id="img3" src="image3.jpg" alt="Image 3">
+    <p>This text wraps around image3, which is aligned to the right side of the page.</p>
+  </div>
+
+  <!-- Image 4: Space around -->
+  <p>
+    <img id="img4" src="image4.png" alt="Image 4">
+    <br>Image 4 with 50px margin around it.
+  </p>
+
+</body>
+</html>

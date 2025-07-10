@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Array Add and Display</title>
+</head>
+<body>
+
+  <h3>Sample screen:</h3>
+  <input type="text" id="inputValue" />
+  <button onclick="addItem()">Add</button>
+  <button onclick="displayItems()">Display</button>
+
+  <hr>
+  <div id="output"></div>
+
+  <script>
+    // Blank array to store items
+    let items = [];
+
+    // Function to add item
+    function addItem() {
+      const input = document.getElementById("inputValue").value;
+      if (input !== "") {
+        items.push(input);
+        document.getElementById("inputValue").value = ""; // Clear input
+      }
+    }
+
+    // Function to display items
+    function displayItems() {
+      const outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = ""; // Clear previous output
+      items.forEach((item, index) => {
+        outputDiv.innerHTML += Item ${index} = ${item}<br>;
+      });
+    }
+  </script>
+
+</body>
+</html>

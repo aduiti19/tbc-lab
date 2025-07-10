@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marks Evaluation</title>
+</head>
+<body>
+
+<script>
+    // Prompt to enter marks
+    var marks = prompt("Enter your marks:");
+
+    // Convert to number just in case it's entered as string
+    marks = parseFloat(marks);
+
+    // Display result using if...else if...else
+    if (marks >= 80 && marks <= 100) {
+        document.write("Result: Distinction");
+    } else if (marks >= 60 && marks < 80) {
+        document.write("Result: First Division");
+    } else if (marks >= 50 && marks < 60) {
+        document.write("Result: Second Division");
+    } else if (marks >= 40 && marks < 50) {
+        document.write("Result: Third Division");
+    } else if (marks < 40 && marks >= 0) {
+        document.write("Result: Fail");
+    } else {
+        document.write("Invalid marks entered!");
+    }
+</script>
+
+</body>
+</html>

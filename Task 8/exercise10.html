@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rectangle Area Calculator</title>
+</head>
+<body>
+
+<script>
+    // Function to calculate area of a rectangle
+    function calculateArea(length, breadth) {
+        return length * breadth;
+    }
+
+    // Take user input using prompt()
+    var length = parseFloat(prompt("Enter the length of the rectangle:"));
+    var breadth = parseFloat(prompt("Enter the breadth of the rectangle:"));
+
+    // Calculate area
+    var area = calculateArea(length, breadth);
+
+    // Display result on the webpage
+    document.write("<h2>Area of Rectangle</h2>");
+    document.write("Length: " + length + "<br>");
+    document.write("Breadth: " + breadth + "<br>");
+    document.write("Area: " + area);
+</script>
+
+</body>
+</html>
