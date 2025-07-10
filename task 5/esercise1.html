@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .form-box {
+      border: 1px solid #333;
+      display: inline-block;
+      padding: 20px 30px;
+      text-align: left;
+      box-shadow: 2px 2px 5px #aaa;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 6px 12px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Search our web site!</h2>
+    <hr>
+
+    <form>
+      <p><strong>Where do you want to search?</strong></p>
+
+      <label><input type="radio" name="section" value="whole" checked> Whole site</label><br>
+      <label><input type="radio" name="section" value="business"> Business Partners Section</label><br>
+      <label><input type="radio" name="section" value="corporate"> Corporate Communications Section</label><br>
+      <label><input type="radio" name="section" value="lotus"> Lotus Education Section</label><br><br>
+
+      <label>Enter a word or two that we can search on:</label><br>
+      <input type="text" name="search"><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Clear">
+    </form>
+  </div>
+
+</body>
+</html>
